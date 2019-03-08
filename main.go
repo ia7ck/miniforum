@@ -1,8 +1,9 @@
 package main
 
 import (
-	"miniforum/controller"
 	"net/http"
+
+	"github.com/ia7ck/miniforum/controller"
 )
 
 func main() {

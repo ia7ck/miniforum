@@ -1,9 +1,10 @@
 package controller
 
 import (
-	"miniforum/model"
 	"net/http"
 	"strconv"
+
+	"github.com/ia7ck/miniforum/model"
 )
 
 func newThread(w http.ResponseWriter, r *http.Request) {

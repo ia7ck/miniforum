@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"miniforum/model"
 	"net/http"
 
+	"github.com/ia7ck/miniforum/model"
 	"golang.org/x/crypto/bcrypt"
 )
 

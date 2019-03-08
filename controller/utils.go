@@ -3,10 +3,11 @@ package controller
 import (
 	"html/template"
 	"log"
-	"miniforum/model"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/ia7ck/miniforum/model"
 )
 
 func warn(args ...interface{}) {

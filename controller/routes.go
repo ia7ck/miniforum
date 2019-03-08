@@ -1,8 +1,9 @@
 package controller
 
 import (
-	"miniforum/model"
 	"net/http"
+
+	"github.com/ia7ck/miniforum/model"
 )
 
 // Routes はルーティングを設定する
