@@ -1,0 +1,21 @@
+{{ define "layout" }}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini forum</title>
+</head>
+
+<body>
+    <div>
+        <h3><a href="/" style="text-decoration: none; color: #222222">mini forum</a></h3>
+        {{ template "content" . }}
+    </div>
+</body>
+
+</html>
+
+{{ end }}

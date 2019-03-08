@@ -1,0 +1,23 @@
+{{ define "content" }}
+
+{{ if .SignedIn }}
+    <div><a href="/thread/new">スレッドを作る</a></div>
+{{ else }}
+    <div><a href="/user/signin">ログイン</a></div>
+{{ end }}
+{{ with .Data }}
+    {{ range . }}
+        <p>{{ newLineToBreak .Content }}</p>
+        <p><a href="/thread/show?id={{ .ID }}">コメントを見る</a>
+            <br>
+            スレッドの作成者：{{ .User.ScreenName }}
+            <br>
+            作成日時：{{ dateFormat .CreatedAt }}
+        </p>
+    {{ end }}
+{{ else }}
+    <p>１つもスレッドがありません</p>
+{{ end }}
+
+
+{{ end }}

@@ -1,0 +1,12 @@
+{{ define "content" }}
+
+<form action="/user/auth" method="POST">
+    <input type="text" name="screen_name" placeholder="ユーザID">
+    <input type="password" name="password" placeholder="パスワード">
+    <button type="submit">ログイン</button>
+</form>
+{{ if not .SignedIn }}
+    <p>新しくユーザ登録するには<a href="/user/signup">こちら</a>から</p>
+{{ end }}
+
+{{ end }}
