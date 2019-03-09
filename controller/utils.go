@@ -66,6 +66,6 @@ var funcMap = template.FuncMap{
 		return template.HTML(strings.Replace(template.HTMLEscapeString(str), "\n", "<br>", -1))
 	},
 	"dateFormat": func(tm time.Time) string {
-		return tm.Format("2006-01-02 03:04")
+		return tm.Format("2006-01-02 15:04")
 	},
 }
